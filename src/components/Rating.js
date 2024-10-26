@@ -15,18 +15,18 @@ function Rating({ onSubmit }) {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#222833] to-[#192027] rounded-2xl shadow-md p-6 w-[336px]">
-      <div className="text-orange-500 text-2xl bg-[#2b313d] w-10 h-10 flex justify-center items-center mb-6 rounded-full">
+    <div className="bg-gradient-to-b from-[#222833] to-[#192027] rounded-2xl shadow-md p-6 w-[calc(100%-32px)] max-w-[385px] mx-auto">
+      <div className="text-orangeCustom text-2xl bg-[#2b313d] w-10 h-10 flex justify-center items-center mb-6 rounded-full">
         <div>
-          <img src={RatingSVG} alt="Thank You Icon" className="h-4 w-4" />
+          <img src={RatingSVG} alt="Rating Icon" className="h-4 w-4" />
         </div>
       </div>
       <h2 className="text-white text-xl font-semibold mb-2">How did we do?</h2>
-      <p className="text-gray-400 text-[12px] mt-4 mb-6">
+      <p className="text-lightGrey text-base mt-4 mb-6">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div className="flex justify-between mb-6">
+      <div className="flex justify-between mb-6 text-sm">
         {[1, 2, 3, 4, 5].map((rating) => (
           <button
             key={rating}
@@ -34,8 +34,8 @@ function Rating({ onSubmit }) {
             className={`w-10 h-10 rounded-full ${
               selectedRating === rating
                 ? "bg-white"
-                : "bg-[#2b313d] text-gray-400"
-            } hover:bg-orange-500 hover:text-white`}
+                : "bg-[#2b313d] text-lightGrey"
+            } hover:bg-orangeCustom hover:text-white font-bold text-center`}
           >
             {rating}
           </button>
@@ -43,8 +43,9 @@ function Rating({ onSubmit }) {
       </div>
       <button
         onClick={handleSubmit}
-        className={`text-transform: uppercase m-1 h-full w-full text-[13px] py-2 rounded-full font-semibold text-black hover:bg-white bg-orange-500 cursor-not-allowed"
-        `}
+        className={`text-transform: uppercase m-1 h-full w-full text-base text-center py-2 rounded-full font-semibold text-black bg-orangeCustom hover:bg-white cursor-${
+          selectedRating ? "pointer" : "not-allowed"
+        }`}
         disabled={!selectedRating}
       >
         Submit
