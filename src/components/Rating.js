@@ -16,7 +16,7 @@ function Rating({ onSubmit }) {
 
   return (
     <div className="bg-gradient-to-b from-[#222833] to-[#192027] rounded-2xl shadow-md p-6 w-[336px]">
-      <div className="text-orange-500 text-2xl bg-[#272d38] w-10 h-10 flex justify-center items-center mb-6 rounded-full">
+      <div className="text-orange-500 text-2xl bg-[#2b313d] w-10 h-10 flex justify-center items-center mb-6 rounded-full">
         <div>
           <img src={RatingSVG} alt="Thank You Icon" className="h-4 w-4" />
         </div>
