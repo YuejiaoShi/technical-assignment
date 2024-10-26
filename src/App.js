@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Rating from "./components/Rating.js";
+import ThankYou from "./components/ThankYou.js";
 
 function App() {
+  const [selectedRating, setSelectedRating] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleRatingSubmit = (rating) => {
+    setSelectedRating(rating);
+    setSubmitted(true);
+  };
+
   return (
-    <div className="text-center">
-      <header className="bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-white text-[calc(10px+2vmin)]">
-        <img
-          src="logo.svg"
-          className="h-[40vmin] pointer-events-none animate-spin-slow"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
-      </header>
+    <div className="bg-[#141519] min-h-screen flex items-center justify-center">
+      {!submitted ? (
+        <Rating onSubmit={handleRatingSubmit} />
+      ) : (
+        <ThankYou rating={selectedRating} />
+      )}
     </div>
   );
 }
