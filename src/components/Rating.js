@@ -15,14 +15,14 @@ function Rating({ onSubmit }) {
   };
 
   return (
-    <div className="bg-[#1f2127] rounded-2xl shadow-md p-8 w-80 text-center">
-      <div className="text-orange-500 text-2xl bg-white w-10 h-10 flex justify-center items-center mb-4 rounded-full">
-        <div className="">
+    <div className="bg-gradient-to-b from-[#222833] to-[#192027] rounded-2xl shadow-md p-6 w-[336px]">
+      <div className="text-orange-500 text-2xl bg-[#272d38] w-10 h-10 flex justify-center items-center mb-6 rounded-full">
+        <div>
           <img src={RatingSVG} alt="Thank You Icon" className="h-4 w-4" />
         </div>
       </div>
-      <h2 className="text-white text-lg font-semibold mb-2">How did we do?</h2>
-      <p className="text-gray-400 text-sm mb-6">
+      <h2 className="text-white text-xl font-semibold mb-2">How did we do?</h2>
+      <p className="text-gray-400 text-[12px] mt-4 mb-6">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
@@ -33,9 +33,9 @@ function Rating({ onSubmit }) {
             onClick={() => handleRatingSelect(rating)}
             className={`w-10 h-10 rounded-full ${
               selectedRating === rating
-                ? "bg-orange-500 text-white"
+                ? "bg-white"
                 : "bg-[#2a2d34] text-gray-400"
-            } hover:bg-gray-700 hover:text-white`}
+            } hover:bg-orange-500 hover:text-white`}
           >
             {rating}
           </button>
@@ -43,11 +43,8 @@ function Rating({ onSubmit }) {
       </div>
       <button
         onClick={handleSubmit}
-        className={`w-full py-2 rounded-full font-semibold ${
-          selectedRating
-            ? "bg-white text-black hover:bg-gray-200"
-            : "bg-gray-600 text-gray-400 cursor-not-allowed"
-        }`}
+        className={`text-transform: uppercase m-1 h-full w-full text-[13px] py-2 rounded-full font-semibold text-black hover:bg-white bg-orange-500 cursor-not-allowed"
+        `}
         disabled={!selectedRating}
       >
         Submit
