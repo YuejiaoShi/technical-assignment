@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Interactive Rating Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Interactive Rating Component is a modern web application designed to collect user feedback effectively. Built using React and Tailwind CSS, this project showcases the creation of a responsive and user-friendly application that can be adapted for any company in any industry.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+[⭐ Interactive Rating Component](https://technical-assignment-plum.vercel.app/)
 
-### `npm start`
+## Technologies and Techniques Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[<img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" height="25">](https://reactjs.org/) Core library for building user interfaces.  
+[<img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" height="25">](https://tailwindcss.com/) Utility-first CSS framework for rapid styling.  
+[<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" height="25">](https://developer.mozilla.org/en-US/docs/Web/JavaScript) The programming language used for app logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Visual Overview
 
-### `npm test`
+[<img src="./preview/rating.png" alt="Interactive Rating Main Page preview" width="700"/>](./preview/rating.png)
+[<img src="./preview/active.png" alt="Interactive Rating Active Page preview" width="700"/>](./preview/active.png)
+[<img src="./preview/thank-you.png" alt="Interactive Rating Thank You Page preview" width="700"/>](./preview/thank-you.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **User Rating:** Allows users to select a rating from 1 to 5, providing quick feedback.
+- **Customizable Feedback Fields:** Fields can be adjusted based on clients’ specific needs to gather relevant insights.
+- **Responsive Design:** Optimized for both desktop and mobile devices to enhance user experience.
+- **Real-time Interaction:** Immediate feedback display upon user selection for a smooth interaction.
+- **User Engagement:** Engaging UI elements to encourage users to provide their feedback.
