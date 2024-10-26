@@ -34,7 +34,7 @@ function Rating({ onSubmit }) {
             className={`w-10 h-10 rounded-full ${
               selectedRating === rating
                 ? "bg-white"
-                : "bg-[#2a2d34] text-gray-400"
+                : "bg-[#2b313d] text-gray-400"
             } hover:bg-orange-500 hover:text-white`}
           >
             {rating}
